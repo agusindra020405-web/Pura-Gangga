@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@theme {
+  --font-nunito: "Nunito", ui-sans-serif, system-ui;
+  --font-varela: "Varela Round", sans-serif;
+
+}
