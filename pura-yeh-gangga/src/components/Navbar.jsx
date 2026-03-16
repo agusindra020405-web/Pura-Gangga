@@ -24,21 +24,21 @@ const Navbar = () => {
           : "bg-transparent py-5"
       }`}
     >
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
+      <div className="max-w-7xl mx-auto flex justify-between items-center font-varela">
         
-        <div className={`text-2xl font-bold tracking-tighter transition-colors ${
-          isScrolled ? "text-orange-600" : "text-white"
+        <div className={`text-2xl font-bold tracking-wide transition-colors ${
+          isScrolled ? "text-black-600" : "text-white "
         }`}>
-          PURA YEH GANGGA
+          Pura Yeh Gangga
         </div>
 
         <ul className={`hidden md:flex space-x-8 font-medium text-sm uppercase tracking-widest transition-colors ${
           isScrolled ? "text-gray-700" : "text-white/90"
         }`}>
-          <li><a href="#home" className="hover:text-orange-500 transition">Tentang Pura</a></li>
-          <li><a href="#about" className="hover:text-orange-500 transition">Cerita</a></li>
-          <li><a href="#story" className="hover:text-orange-500 transition">Buku</a></li>
-          <li><a href="#contact" className="hover:text-orange-500 transition">Artikel</a></li>
+          <li><a href="#about" className="hover:text-orange-500 transition">Tentang Pura</a></li>
+          <li><a href="#story" className="hover:text-orange-500 transition">Cerita</a></li>
+          <li><a href="#book" className="hover:text-orange-500 transition">Buku</a></li>
+          <li><a href="#artikel" className="hover:text-orange-500 transition">Artikel</a></li>
           <li><a href="#contact" className="hover:text-orange-500 transition">Lokasi</a></li>
         </ul>
 

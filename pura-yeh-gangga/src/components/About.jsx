@@ -11,7 +11,7 @@ const About = () => {
             Jejak Air Suci & Asa Mewarisi Kehidupan
           </h2>
 
-          <div className="font-nunito text-gray-400 text-lg md:text-xl leading-relaxed max-w-4xl mx-auto space-y-6">
+          <div className="font-nunito text-justify text-gray-500 text-lg md:text-xl leading-relaxed max-w-4xl mx-auto space-y-6">
             <p>
               Di sebuah lembah hijau di wilayah Baturiti, Tabanan, aliran air
               mengukir lanskap sekaligus sejarah. Di tepi Tukad Yeh Gangga,

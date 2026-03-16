@@ -1,7 +1,13 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @theme {
   --font-nunito: "Nunito", ui-sans-serif, system-ui;
   --font-varela: "Varela Round", sans-serif;
+}
 
+html {
+  scroll-behavior: smooth;
 }

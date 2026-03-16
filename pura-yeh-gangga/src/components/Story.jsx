@@ -11,13 +11,12 @@ const Story = () => {
             />
           </div>
 
-          
             <div className="bg-black text-center flex items-center justify-center align-items-center h-full">
               <div className="w-100 p-4">
-                <h2 className="fw-bold text-white">
+                <h2 className="font-varela fw-bold text-xl text-[#C7A767]">
                   Di Mana Air dan Doa Bertemu
                 </h2>
-                <p className="text-center text-white leading-relaxed">
+                <p className="font-nunito text-center text-justify text-white leading-relaxed">
                   Pura Yeh Gangga hari ini tercatat sebagai salah satu dari lima
                   situs Cagar Budaya peringkat provinsi di Bali, sebuah
                   pengakuan resmi atas nilai sejarah, arkeologis, dan spiritual
@@ -33,10 +32,10 @@ const Story = () => {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2">
             <div className="bg-black text-center flex items-center justify-center align-items-center h-full">
               <div className="w-100 p-4">
-                <h1 className="fw-bold text-white ">
+                <h1 className="font-varela fw-bold text-xl text-[#C7A767]">
                   Toya iku urip
                 </h1>
-                <p className="text-center text-white max-w-md mx-auto">
+                <p className="font-nunito text-center text-justify text-white leading-relaxed">
                   Di Yeh Gangga, air tidak hanya mengalir. Ia hadir sebagai
                   pusat kehidupan, penghubung spiritual, dan sumber
                   keberlanjutan alam. Setiap tetes air yang muncul dari mata
