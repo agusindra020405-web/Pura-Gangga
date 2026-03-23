@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,11 +36,11 @@ const Navbar = () => {
         <ul className={`hidden md:flex space-x-8 font-medium text-sm uppercase tracking-widest transition-colors ${
           isScrolled ? "text-gray-700" : "text-white/90"
         }`}>
-          <li><a href="#about" className="hover:text-orange-500 transition">Tentang Pura</a></li>
-          <li><a href="#story" className="hover:text-orange-500 transition">Cerita</a></li>
-          <li><a href="#book" className="hover:text-orange-500 transition">Buku</a></li>
-          <li><a href="#artikel" className="hover:text-orange-500 transition">Artikel</a></li>
-          <li><a href="#contact" className="hover:text-orange-500 transition">Lokasi</a></li>
+          <li><a href="/#about" className="hover:text-orange-500 transition">Tentang Pura</a></li>
+          <li><a href="/#story" className="hover:text-orange-500 transition">Cerita</a></li>
+          <li><a href="/#book" className="hover:text-orange-500 transition">Buku</a></li>
+          <li><a href="/#artikel" className="hover:text-orange-500 transition">Artikel</a></li>
+          <li><a href="/#contact" className="hover:text-orange-500 transition">Lokasi</a></li>
         </ul>
 
         {/* Tombol Mobile (Hamburger) */}

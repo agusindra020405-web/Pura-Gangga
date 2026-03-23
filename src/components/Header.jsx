@@ -1,14 +1,16 @@
 import Navbar from "../components/Navbar";
+import heroImg from "../assets/hero.png"; // Import gambar untuk memastikan dimuat
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <section className="relative h-screen w-full overflow-hidden">
       <Navbar />
 
-      {/*Background Image dengan Overlay Gelap */}
+      {/* Background Image dengan Overlay Gelap */}
       <div className="absolute inset-0 -z-10">
         <img
-          src="/src/assets/hero.png"
+          src={heroImg} // Gunakan import untuk path yang benar
           alt="Pura Yeh Gangga"
           className="h-full w-full object-cover scale-110 hover:scale-125 transition-transform duration-[4000ms] ease-out"
         />
@@ -17,10 +19,10 @@ const Header = () => {
       </div>
 
       <div className="relative flex h-full flex-col items-center justify-center px-4 text-center text-[#C7A767]">
-        <h1 className="font-varela text-6xl md:text-8xl font-bold tracking-[0.2em] drop-shadow-2xl animate-bounc">
+        <h1 className="font-varela text-6xl md:text-8xl font-bold tracking-[0.2em] drop-shadow-2xl animate-fadeup will-change-transform">
           YEH GANGGA
         </h1>
-        <p className="mt-6 max-w-2xl font-nunito text-xl md:text-xl leading-relaxed opacity-90 animate-fadeup delay-300">
+        <p className="mt-6 max-w-2xl font-nunito text-xl md:text-xl leading-relaxed opacity-90 animate-fadeup will-change-transform">
           Jejak Air Suci & Asa Mewarisi Kehidupan
         </p>
 
@@ -28,6 +30,7 @@ const Header = () => {
         <a
           href="#about"
           className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10"
+          style={{ animationDelay: "0.6s" }}
         >
           <svg
             fill="none"

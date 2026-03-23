@@ -1,3 +1,4 @@
+
 const Footer = () => {
     return (
         <div className="bg-black text-gray-600 text-center py-26">

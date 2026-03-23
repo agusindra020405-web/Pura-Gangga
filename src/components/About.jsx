@@ -1,4 +1,4 @@
-// src/sections/About.jsx
+
 const About = () => {
   return (
     <section id="about" className="bg-black text-white py-20 px-6">

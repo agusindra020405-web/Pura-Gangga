@@ -1,3 +1,4 @@
+
 const Contact = () => {
   return (
     <section id="contact" className="bg-black py-15 px-20 grid md:grid-cols-2 gap-10 items-center">

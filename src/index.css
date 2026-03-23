@@ -11,3 +11,18 @@
 html {
   scroll-behavior: smooth;
 }
+
+@keyframes fadeup {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeup {
+  animation: fadeup 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}

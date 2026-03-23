@@ -1,3 +1,4 @@
+
 const Story = () => {
   return (
     <section id="story" className="bg-gray-100 py-15 px-20">

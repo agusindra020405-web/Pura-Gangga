@@ -1,21 +1,25 @@
+import {Link} from "react-router-dom";
 const artikelData = [
   {
     tanggal: "16 Desember 2025",
     penulis: "I Wayan Gede Yadnya Tenaya dan Putu Lila Wistara",
     judul: "Ragam Tinggalan di Pura Yeh Gangga dan Nilai Pentingnya",
-    deskripsi: "Mengulas 59 warisan budaya kebendaan yang tersebar di situs, dari Meru tumpang tujuh hingga ceruk pertapaan kuno.",
+    deskripsi:
+      "Mengulas 59 warisan budaya kebendaan yang tersebar di situs, dari Meru tumpang tujuh hingga ceruk pertapaan kuno.",
   },
   {
     tanggal: "9 Desember 2025",
     penulis: "Giri Prayoga",
     judul: "Pengaturan Ruang (Zonasi) Situs Cagar Budaya Pura Yeh Gangga",
-    deskripsi: "Prinsip dan hasil penentuan zonasi situs sebagai upaya perlindungan sekaligus peluang peningkatan kesejahteraan masyarakat.",
+    deskripsi:
+      "Prinsip dan hasil penentuan zonasi situs sebagai upaya perlindungan sekaligus peluang peningkatan kesejahteraan masyarakat.",
   },
   {
     tanggal: "2 Desember 2025",
     penulis: "I Wayan Gede",
     judul: "Lintas Sejarah dan Upaya Pelestarian di Pura Yeh Gangga",
-    deskripsi: "Menelusuri perjalanan sejarah panjang Pura Yeh Gangga sejak abad ke-14 dan rangkaian upaya pelestariannya hingga kini.",
+    deskripsi:
+      "Menelusuri perjalanan sejarah panjang Pura Yeh Gangga sejak abad ke-14 dan rangkaian upaya pelestariannya hingga kini.",
   },
 ];
 
@@ -36,9 +40,12 @@ const Artikel = () => {
               Menampilkan 3 dari 4 artikel
             </p>
 
-            <button className="bg-teal-600 text-white text-sm px-3 py-1 rounded-lg shadow hover:bg-teal-700 transition">
+            <Link
+              to="/ListArtikel"
+              className="inline-block bg-teal-600 text-white text-sm px-3 py-1 rounded-lg shadow hover:bg-teal-700 transition"
+            >
               LIHAT SEMUA ARTIKEL
-            </button>
+            </Link>
           </div>
         </div>
 
