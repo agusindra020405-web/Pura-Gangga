@@ -1,45 +1,84 @@
-
+import { motion } from "framer-motion";
 const Contact = () => {
+  
+  const fadeInLeft = {
+    hidden: { opacity: 0, x: -50 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
+  };
+
+  
+  const fadeInRight = {
+    hidden: { opacity: 0, x: 50 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.8, ease: "easeOut", delay: 0.2 },
+    },
+  };
   return (
-    <section id="contact" className="bg-black py-15 px-20 grid md:grid-cols-2 gap-10 items-center">
-      <div className="container px-4 px-lg-5">
+    <section
+      id="contact"
+      className="bg-black py-20 px-10 grid md:grid-cols-2 gap-10 items-center overflow-hidden"
+    >
+      
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.3 }}
+        variants={fadeInLeft}
+        className="container px-4 px-lg-5"
+      >
         <div className="max-w-6xl mx-auto text-white">
-          <h1 className="text-4xl font-bold text-yellow-600 ">
+          <h1 className="text-4xl font-bold text-yellow-600 mb-2">
             Lokasi Pura Yeh Gangga
           </h1>
-          <p className="text-gray-400 max-w-md leading-relaxed ">
+          <p className="text-gray-400 max-w-md leading-relaxed">
             Temukan Pura Yeh Gangga yang berada pada sebuah hamparan lembah yang
             dibelah oleh aliran air sungai Gangga.
           </p>
         </div>
 
-        <div className="bg-gray-600 mt-8 p-3 rounded-lg  max-w-6xl ">
-          <div>
-            <h1 className="text-yellow-600 text-xl leading-relaxed ">Alamat</h1>
-            <p className="text-gray-300">
-              Pura Yeh Gangga Pekraman Tengah, Perean, Kecamatan Baturiti
-              Kabupaten Tabanan, Bali 82191
-            </p>
-            <a 
-            href="https://maps.app.goo.gl/2xejExdbfeVMfNzXA"
+        <motion.div
+          className="bg-gray-800/50 mt-8 p-6 rounded-lg max-w-6xl border border-gray-700"
+          whileHover={{ scale: 1.02 }} // Sedikit interaksi saat di-hover
+        >
+          <h1 className="text-yellow-600 text-xl font-semibold mb-2">Alamat</h1>
+          <p className="text-gray-300 leading-relaxed">
+            Pura Yeh Gangga Pekraman Tengah, Perean, Kecamatan Baturiti,
+            Kabupaten Tabanan, Bali 82191
+          </p>
+          <a
+            href="https://maps.google.com" // Ganti dengan link asli
             target="_blank"
-            className="text-white underline mt-4 inline-block rounded-lg">
-              Buka Di Google Maps
-              </a>
-          </div>
-        </div>
-      </div>
-      <div>
+            rel="noopener noreferrer"
+            className="text-white underline mt-4 inline-block hover:text-yellow-500 transition-colors"
+          >
+            Buka Di Google Maps
+          </a>
+        </motion.div>
+      </motion.div>
+
+      
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.3 }}
+        variants={fadeInRight}
+      >
         <iframe
-        className="shadow-lg rounded-lg w-full "
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.7185753516756!2d115.19452367551673!3d-8.42927359161009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2238cd2871ba5%3A0xc80a04169a7b3feb!2sPura%20Yeh%20Gangga!5e0!3m2!1sid!2sid!4v1773466494301!5m2!1sid!2sid"
-          width="600"
+          className="shadow-2xl rounded-xl w-full border-2 border-gray-800"
+          src="https://www.google.com/maps/embed?..." // Masukkan src embed asli anda
+          width="100%"
           height="450"
-          allowfullscreen=""
+          allowFullScreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
-      </div>
+      </motion.div>
     </section>
   );
 };
